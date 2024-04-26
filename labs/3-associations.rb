@@ -5,8 +5,12 @@
 
 # **************************
 # DON'T CHANGE OR MOVE
-Activity.destroy_all
+Activities.destroy_all
 # **************************
+
+
+
+
 
 # Lab 3: Associations
 # - We've added data into the contacts table.  Next, we'll add data
@@ -14,8 +18,11 @@ Activity.destroy_all
 #   activity data in the database.  Afterwards, display a
 #   single salesperson's activity data:
 
+
+
 # 1. insert 3 rows in the activities table with relationships to
 # a single salesperson and 2 different contacts
+
 
 # 2. Display all the activities between the salesperson used above
 # and one of the contacts (sample output below):
@@ -28,6 +35,7 @@ Activity.destroy_all
 # CHALLENGE:
 # 3. Similar to above, but display all of the activities for the salesperson
 # across all contacts (sample output below):
+
 
 # ---------------------------------
 # Ben's Activities:
