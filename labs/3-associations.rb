@@ -30,6 +30,16 @@ activity.save
 # 2. Display all the activities between the salesperson used above
 # and one of the contacts (sample output below):
 
+
+
+for i in Activity
+    first_name= i ["first_name"]
+    last_name= i["last_name"]
+
+    puts "#{first_name} #{last_name}"
+
+end
+
 # ---------------------------------
 # Activities between Ben and Tim Cook:
 # - quick checkin over facetime
