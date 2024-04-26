@@ -5,12 +5,8 @@
 
 # **************************
 # DON'T CHANGE OR MOVE
-Activities.destroy_all
+Activity.destroy_all
 # **************************
-
-
-
-
 
 # Lab 3: Associations
 # - We've added data into the contacts table.  Next, we'll add data
@@ -18,11 +14,18 @@ Activities.destroy_all
 #   activity data in the database.  Afterwards, display a
 #   single salesperson's activity data:
 
-
+lucas = SalesPerson.find_by({"first_name"=>"Lucas"})
+achi = Contact.find_by({"first_name"=>"Achi", "last_name" =>"Guyot"})
+tim = Contact.find_by({"first_name"=>"Tim"})
 
 # 1. insert 3 rows in the activities table with relationships to
 # a single salesperson and 2 different contacts
 
+activity = Activity.new # p activity # veo que tiene todo lo que tiene una activity con todos los campos nulos
+activity["note"] = "call juancito"
+activity["salesperson_id"] = lucas["id"]
+activity["contact_id"] = achi["id"]
+activity.save
 
 # 2. Display all the activities between the salesperson used above
 # and one of the contacts (sample output below):

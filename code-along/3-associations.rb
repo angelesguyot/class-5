@@ -52,7 +52,7 @@ puts "Apple employees: #{apple_employees.count}"
 # 3. What is the full name of each contact who works at Apple?
 
 for employee in apple_employees
-        first_name=employee ["first_name"]
+        first_name= employee ["first_name"]
         last_name= employee["last_name"]
 
         puts "#{first_name} #{last_name}"
